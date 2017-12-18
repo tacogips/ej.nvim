@@ -1,10 +1,12 @@
 import neovim
 
+
 @neovim.plugin
 class Ej(object):
-    def __init__(self,nvim):
+    def __init__(self, nvim):
         self.nvim = nvim
 
     @neovim.function("TestFunction")
-    def testfunction(self,args):
+    def testfunction(self, args):
         print(args)
+        return 12
